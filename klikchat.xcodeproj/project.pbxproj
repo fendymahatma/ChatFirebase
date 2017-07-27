@@ -14,6 +14,7 @@
 		2E5FE4921F2720FF009C0487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5FE4901F2720FF009C0487 /* LaunchScreen.storyboard */; };
 		2E5FE49A1F272114009C0487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5FE4991F272114009C0487 /* LoginViewController.swift */; };
 		2E8B39DC1F299522006E2A88 /* NewChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B39DB1F299522006E2A88 /* NewChatTableViewController.swift */; };
+		2E8B39DF1F29A2A1006E2A88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B39DE1F29A2A1006E2A88 /* User.swift */; };
 		2E93DC561F2747E30070C566 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93DC551F2747E30070C566 /* RegisterViewController.swift */; };
 		2EC574C81F285037004350AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC574C71F285037004350AF /* GoogleService-Info.plist */; };
 		B4673CF069FC3A4145DD924F /* Pods_klikchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D01C1AEFAC82F9618F92581 /* Pods_klikchat.framework */; };
@@ -30,6 +31,7 @@
 		2E5FE4931F2720FF009C0487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5FE4991F272114009C0487 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E8B39DB1F299522006E2A88 /* NewChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatTableViewController.swift; sourceTree = "<group>"; };
+		2E8B39DE1F29A2A1006E2A88 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E93DC551F2747E30070C566 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2EC574C71F285037004350AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D06C916A0325FE902D77F9B /* Pods-klikchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-klikchat/Pods-klikchat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		2E5FE4861F2720FF009C0487 /* klikchat */ = {
 			isa = PBXGroup;
 			children = (
+				2E8B39DD1F29A256006E2A88 /* Model */,
 				2E5FE49B1F272117009C0487 /* Controller */,
 				2E5FE4871F2720FF009C0487 /* AppDelegate.swift */,
 				2E5FE48E1F2720FF009C0487 /* Assets.xcassets */,
@@ -89,6 +92,14 @@
 				2E8B39DB1F299522006E2A88 /* NewChatTableViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		2E8B39DD1F29A256006E2A88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E8B39DE1F29A2A1006E2A88 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		50C7A4853C258CC95440B824 /* Pods */ = {
@@ -235,6 +246,7 @@
 			files = (
 				2E5FE49A1F272114009C0487 /* LoginViewController.swift in Sources */,
 				2E5FE48A1F2720FF009C0487 /* ChatListViewController.swift in Sources */,
+				2E8B39DF1F29A2A1006E2A88 /* User.swift in Sources */,
 				2E5FE4881F2720FF009C0487 /* AppDelegate.swift in Sources */,
 				2E8B39DC1F299522006E2A88 /* NewChatTableViewController.swift in Sources */,
 				2E93DC561F2747E30070C566 /* RegisterViewController.swift in Sources */,

@@ -41,7 +41,6 @@ class ChatListViewController: UITableViewController {
                     self.navigationItem.title = user["name"] as? String
                 }
                 
-                print(data)
             }, withCancel: nil)
         }
     }
