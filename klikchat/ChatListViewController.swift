@@ -10,21 +10,21 @@ import UIKit
 import Firebase
 
 class ChatListViewController: UITableViewController {
-        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Kasih tombol di nafigasi kiri dan set action
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(handleLogout))
-        
+        //let imageProfile = UIImage(named: "default_profile_pic")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "log out", style: .plain, target: self, action: #selector(handleLogout))
         
         // Kasih tombol di nafigasi kanan dan set action
         let image = UIImage(named: "comment-plus-outline")
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
-    
     }
     
-    //kalo user masih belum login login
+    //kalo user masih belum login
     override func didMove(toParentViewController parent: UIViewController?) {
         checkIfUserAreLogedIn()
     }
