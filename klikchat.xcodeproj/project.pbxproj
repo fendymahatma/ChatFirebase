@@ -13,6 +13,7 @@
 		2E5FE48F1F2720FF009C0487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5FE48E1F2720FF009C0487 /* Assets.xcassets */; };
 		2E5FE4921F2720FF009C0487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5FE4901F2720FF009C0487 /* LaunchScreen.storyboard */; };
 		2E5FE49A1F272114009C0487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5FE4991F272114009C0487 /* LoginViewController.swift */; };
+		2E6E843C1F2AE41B00621EEA /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E843B1F2AE41B00621EEA /* TimelineViewController.swift */; };
 		2E8B39DC1F299522006E2A88 /* NewChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B39DB1F299522006E2A88 /* NewChatTableViewController.swift */; };
 		2E8B39DF1F29A2A1006E2A88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B39DE1F29A2A1006E2A88 /* User.swift */; };
 		2E8B39E11F29D09D006E2A88 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B39E01F29D09D006E2A88 /* ProfileViewController.swift */; };
@@ -31,6 +32,7 @@
 		2E5FE4911F2720FF009C0487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E5FE4931F2720FF009C0487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5FE4991F272114009C0487 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2E6E843B1F2AE41B00621EEA /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		2E8B39DB1F299522006E2A88 /* NewChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatTableViewController.swift; sourceTree = "<group>"; };
 		2E8B39DE1F29A2A1006E2A88 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E8B39E01F29D09D006E2A88 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				2E5FE4891F2720FF009C0487 /* ChatListViewController.swift */,
 				2E8B39DB1F299522006E2A88 /* NewChatTableViewController.swift */,
 				2E8B39E01F29D09D006E2A88 /* ProfileViewController.swift */,
+				2E6E843B1F2AE41B00621EEA /* TimelineViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				2E8B39DF1F29A2A1006E2A88 /* User.swift in Sources */,
 				2E5FE4881F2720FF009C0487 /* AppDelegate.swift in Sources */,
 				2E8B39E11F29D09D006E2A88 /* ProfileViewController.swift in Sources */,
+				2E6E843C1F2AE41B00621EEA /* TimelineViewController.swift in Sources */,
 				2E8B39DC1F299522006E2A88 /* NewChatTableViewController.swift in Sources */,
 				2E93DC561F2747E30070C566 /* RegisterViewController.swift in Sources */,
 			);

@@ -18,12 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Set Firebase
         FIRApp.configure()
-        
+        	
         // Set window awal
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        
+        //coba dlu,,, HAHAHAHHA
+        let layout = UICollectionViewFlowLayout()
+        window?.rootViewController = UINavigationController(rootViewController: TimelineViewController(collectionViewLayout: layout))
+        
+        //UINavigationBar.appearance().tintColor = UIColor(r: 255, g: 255, b: 255)
+        
+        
+        
         // Set controller mana yang dipilih di awal untuk memulai aplikasi dan di kasih View navigasi bar
-        window?.rootViewController = UINavigationController(rootViewController: ChatListViewController())
+        //window?.rootViewController = UINavigationController(rootViewController: ChatListViewController())
         
         return true
     }
