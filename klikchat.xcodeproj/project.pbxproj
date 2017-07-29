@@ -19,6 +19,9 @@
 		2E8B39E11F29D09D006E2A88 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B39E01F29D09D006E2A88 /* ProfileViewController.swift */; };
 		2E93DC561F2747E30070C566 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93DC551F2747E30070C566 /* RegisterViewController.swift */; };
 		2EC574C81F285037004350AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC574C71F285037004350AF /* GoogleService-Info.plist */; };
+		2ED0BEB41F2C58D700CEED69 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BEB31F2C58D700CEED69 /* Extension.swift */; };
+		2ED0BEB71F2C5A3400CEED69 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BEB61F2C5A3400CEED69 /* TimelineCell.swift */; };
+		2ED0BEB91F2C5AF600CEED69 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BEB81F2C5AF600CEED69 /* UserCell.swift */; };
 		B4673CF069FC3A4145DD924F /* Pods_klikchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D01C1AEFAC82F9618F92581 /* Pods_klikchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		2E8B39E01F29D09D006E2A88 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2E93DC551F2747E30070C566 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2EC574C71F285037004350AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2ED0BEB31F2C58D700CEED69 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2ED0BEB61F2C5A3400CEED69 /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		2ED0BEB81F2C5AF600CEED69 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9D06C916A0325FE902D77F9B /* Pods-klikchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-klikchat/Pods-klikchat.debug.xcconfig"; sourceTree = "<group>"; };
 		E54B07ACE19C3C507F6C7F71 /* Pods-klikchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-klikchat/Pods-klikchat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +81,8 @@
 		2E5FE4861F2720FF009C0487 /* klikchat */ = {
 			isa = PBXGroup;
 			children = (
+				2ED0BEB51F2C5A0800CEED69 /* View */,
+				2ED0BEB21F2C586D00CEED69 /* Helper */,
 				2E8B39DD1F29A256006E2A88 /* Model */,
 				2E5FE49B1F272117009C0487 /* Controller */,
 				2E5FE4871F2720FF009C0487 /* AppDelegate.swift */,
@@ -106,6 +114,23 @@
 				2E8B39DE1F29A2A1006E2A88 /* User.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2ED0BEB21F2C586D00CEED69 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2ED0BEB31F2C58D700CEED69 /* Extension.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		2ED0BEB51F2C5A0800CEED69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ED0BEB61F2C5A3400CEED69 /* TimelineCell.swift */,
+				2ED0BEB81F2C5AF600CEED69 /* UserCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		50C7A4853C258CC95440B824 /* Pods */ = {
@@ -251,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5FE49A1F272114009C0487 /* LoginViewController.swift in Sources */,
+				2ED0BEB41F2C58D700CEED69 /* Extension.swift in Sources */,
+				2ED0BEB71F2C5A3400CEED69 /* TimelineCell.swift in Sources */,
 				2E5FE48A1F2720FF009C0487 /* ChatListViewController.swift in Sources */,
 				2E8B39DF1F29A2A1006E2A88 /* User.swift in Sources */,
 				2E5FE4881F2720FF009C0487 /* AppDelegate.swift in Sources */,
@@ -258,6 +285,7 @@
 				2E6E843C1F2AE41B00621EEA /* TimelineViewController.swift in Sources */,
 				2E8B39DC1F299522006E2A88 /* NewChatTableViewController.swift in Sources */,
 				2E93DC561F2747E30070C566 /* RegisterViewController.swift in Sources */,
+				2ED0BEB91F2C5AF600CEED69 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

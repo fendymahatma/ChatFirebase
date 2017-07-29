@@ -298,4 +298,3 @@ class RegisterViewController: UIViewController {
         iconKlikChat.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
 }
-
