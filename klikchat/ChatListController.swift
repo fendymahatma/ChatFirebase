@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ChatListViewController: UITableViewController {
+class ChatListController: UITableViewController {
     
     
     override func viewDidLoad() {
@@ -54,13 +54,13 @@ class ChatListViewController: UITableViewController {
             print(logoutError)
         }
         
-        let loginViewController = LoginViewController()
+        let loginViewController = LoginController()
         present(loginViewController, animated: true, completion: nil)
     }
     
     func handleNewMessage() {
         // harus di set dulu viewnya untuk di kasih navigasi bar
-        let newChatTableViewController = NewChatTableViewController()
+        let newChatTableViewController = UITableViewController()
         let navController = UINavigationController(rootViewController: newChatTableViewController)
         present(navController, animated: true, completion: nil)
         

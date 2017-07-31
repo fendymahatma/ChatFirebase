@@ -26,3 +26,10 @@ extension UIColor{
         self.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
     }
 }
+
+
+extension UIApplication {
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}

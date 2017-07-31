@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginController: UIViewController {
 
     // Bikin Container buat textField
     let inputContainerView: UIView = {
@@ -76,7 +76,7 @@ class LoginViewController: UIViewController {
     
     func handleRegister() {
         
-        let registerViewController = RegisterViewController()
+        let registerViewController = RegisterController()
         present(registerViewController, animated: true, completion: nil)
     }
     

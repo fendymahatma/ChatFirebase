@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class NewChatTableViewController: UITableViewController {
+class NewChatController: UITableViewController {
 
     let cellId = "cellId"
     var users = [User]()

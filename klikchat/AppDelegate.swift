@@ -25,18 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //coba dlu,,, HAHAHAHHA
         let layout = UICollectionViewFlowLayout()
-        window?.rootViewController = UINavigationController(rootViewController: TimelineViewController(collectionViewLayout: layout))
+        //layout.scrollDirection = .horizontal
+        window?.rootViewController = UINavigationController(rootViewController: CoreController(collectionViewLayout: layout))
         
         UINavigationBar.appearance().barTintColor = UIColor(r: 37, g: 163, b: 103)
         
         application.statusBarStyle = .lightContent
         
         // Ganti warna window statusbar background
-        let statusBarBackgroundView = UIView()
-        statusBarBackgroundView.backgroundColor = UIColor(r: 31, g: 135, b: 73)
-        window?.addSubview(statusBarBackgroundView)
-        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
-        window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor(r: 31, g: 135, b: 73)
+        
         
         // Set controller mana yang dipilih di awal untuk memulai aplikasi dan di kasih View navigasi bar
         //window?.rootViewController = UINavigationController(rootViewController: ChatListViewController())

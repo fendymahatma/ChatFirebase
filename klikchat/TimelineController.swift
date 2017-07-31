@@ -8,21 +8,43 @@
 
 import UIKit
 
-class TimelineViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class TimelineController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set navigation bar
-        let titleNavigationBar = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
-        titleNavigationBar.text = "Timeline"
-        titleNavigationBar.textColor = UIColor.white
-        navigationItem.titleView = titleNavigationBar
-        navigationController?.navigationBar.isTranslucent = false
+        setupCollectionView()
+        setupNavigationBar()
         
+    }
+    
+    func setupCollectionView() {
         // Set collectionView
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(TimelineCell.self, forCellWithReuseIdentifier: "cellid")
+        collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+    }
+    
+    func setupNavigationBar() {
+        // Bikin button search
+        let searchImage = UIImage(named: "magnify")?.withRenderingMode(.alwaysOriginal)
+        let searchButtonItem = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(handleSearch))
+        // Bikin button addContact
+        let addContactImage = UIImage(named: "account-multiple-plus")?.withRenderingMode(.alwaysOriginal)
+        let addContactButtonItem = UIBarButtonItem(image: addContactImage, style: .plain, target: self, action: #selector(handleAddContact))
+        
+        navigationItem.rightBarButtonItems = [addContactButtonItem, searchButtonItem]
+    }
+    
+    func handleSearch() {
+        print("search clicked")
+    }
+    
+    func handleAddContact() {
+        print("addContact clicked")
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,4 +70,6 @@ class TimelineViewController: UICollectionViewController, UICollectionViewDelega
         return 0
     }
 }
+
+
 
